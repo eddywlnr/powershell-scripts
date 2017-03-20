@@ -24,7 +24,7 @@ None. You cannot pipe objects.
 PRTG Style XML with each NetApp Snapmirror relationship as sensor channel.
 
 .LINK
-
+https://github.com/eddywlnr/powershell-scripts/blob/master/prtg-netapp-volumes
 
 .EXAMPLE
 C:\PS> Get-NetAppSnapmirrorLagtime netapp h 25 30
