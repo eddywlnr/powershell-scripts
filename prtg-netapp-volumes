@@ -1,0 +1,39 @@
+<#
+.SYNOPSIS
+Outputs a PRTG XML with all NetApp Volumes and their used Capacity.
+.DESCRIPTION
+Every Volume results in one Channel 
+Channel names are clustername:volumename
+The message of the sensor is set to the procentual volume free space.
+for more infos see the parameter descriptions
+Developed and Tested against DataONTAP 8.3.2P7
+
+.PARAMETER TargetHost
+DNS name or IP of the NetApp filer. You can use the %host parameter of PRTG
+
+.PARAMETER WarningThreshold
+Specify the default channel warnig threshold. 0 = disabled
+
+.PARAMETER ErrorThreshold
+Specify the default channel error threshold. 0 = disabled
+
+.INPUTS
+None. You cannot pipe objects.
+
+.OUTPUTS
+PRTG Style XML with each NetApp Snapmirror relationship as sensor channel.
+
+.LINK
+
+
+.EXAMPLE
+C:\PS> Get-NetAppSnapmirrorLagtime netapp h 25 30
+
+.EXAMPLE
+C:\PS> Get-NetAppSnapmirrorLagtime netapp
+
+.NOTES
+    Author: Edmund Wallner
+    Created: 2017-03-20
+    Updated: 2017-03-20
+#>
